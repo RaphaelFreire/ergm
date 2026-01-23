@@ -42,6 +42,10 @@
       scroll-behavior: smooth;
     }
 
+    body {
+      background-color: #ffffff;
+    }
+
     #services,
     #about,
     #company,
@@ -138,7 +142,7 @@
         <a href="#about" class="text-gray-600 hover:text-primary transition">Sócios</a>
         <a href="#services" class="text-gray-600 hover:text-primary transition">Serviços</a>
         <a href="#contact" class="text-gray-600 hover:text-primary transition">Contato</a>
-        <a href="https://wa.me/5562992990455"
+        <a target="_blank" href="https://wa.me/5562992990455"
           class="bg-primary hover:bg-secondary text-white px-6 py-2 rounded-md font-medium transition text-center">
           Fale com a Giovana
         </a>
@@ -906,10 +910,36 @@
 
     const menuBtn = document.getElementById("menu-btn");
     const mobileMenu = document.getElementById("mobile-menu");
-
+  
     menuBtn.addEventListener("click", () => {
       mobileMenu.classList.toggle("hidden");
     });
+  });
+
+  
+  // Menu Mobile close after click
+   document.addEventListener('click', function (e) {
+    const mobileMenu = document.getElementById("mobile-menu");
+
+     if (e.target.matches('a[href="#home"]')) {
+      mobileMenu.classList.toggle("hidden");
+    }
+
+    if (e.target.matches('a[href="#company"]')) {
+      mobileMenu.classList.toggle("hidden");
+    }
+
+    if (e.target.matches('a[href="#about"]')) {
+      mobileMenu.classList.toggle("hidden");
+    }
+
+     if (e.target.matches('a[href="#services"]')) {
+      mobileMenu.classList.toggle("hidden");
+    }
+
+    if (e.target.matches('a[href="#contact"]')) {
+      mobileMenu.classList.toggle("hidden");
+    }
   });
 
   //Form WhatsApp
