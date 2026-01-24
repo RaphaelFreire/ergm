@@ -131,31 +131,31 @@
 
 <body class="font-sans text-dark">
   <!-- Header -->
-  <header class="bg-primary shadow-md fixed w-full z-50">
+  <header role="header" class="bg-primary shadow-md fixed w-full z-50">
     <div class="container mx-auto px-6 py-4">
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <img src="img/logo.svg" alt="Logo Orzen Assessoria e Gestão de Obras" width="200px" class="bg-primary" />
 
         <!-- Menu desktop -->
-        <nav class="hidden md:flex items-center space-x-8">
-          <a href="#home" class="text-white transition">Home</a>
-          <a href="#company" class="text-white transition">Empresa</a>
-          <a href="#about" class="text-white transition">Sócios</a>
-          <a href="#services" class="text-white transition">Serviços</a>
-          <a href="#contact" class="text-white transition">Contato</a>
+        <nav role="navigation" class="hidden md:flex items-center space-x-8">
+          <a href="#home" class="text-white transition hover:bg-secondary p-2 rounded-md">Home</a>
+          <a href="#company" class="text-white transition hover:bg-secondary p-2 rounded-md">Empresa</a>
+          <a href="#about" class="text-white transition hover:bg-secondary p-2 rounded-md">Sócios</a>
+          <a href="#services" class="text-white transition hover:bg-secondary p-2 rounded-md">Serviços</a>
+          <a href="#contact" class="text-white transition hover:bg-secondary p-2 rounded-md">Contato</a>
         </nav>
 
         <!-- Botão CTA desktop -->
         <div class="hidden md:block">
-          <a href="https://wa.me/5562992990455"
+          <a target="_blank" href="https://wa.me/5562992990455"
             class="bg-primary hover:bg-secondary text-white px-6 py-2 rounded-md font-medium transition flex items-center">
             <i data-feather="message-circle" class="mr-2"></i> Fale Agora
           </a>
         </div>
 
         <!-- Botão menu mobile -->
-        <button id="menu-btn" class="md:hidden focus:outline-none">
+        <button id="menu-btn" aria-label="Menu Mobile" class="md:hidden focus:outline-none">
           <i data-feather="menu" style="color: #ffffff"></i>
         </button>
       </div>
@@ -163,12 +163,12 @@
 
     <!-- Menu mobile -->
     <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
-      <nav class="flex flex-col p-4 space-y-4">
-        <a href="#home" class="text-primary font-medium hover:text-secondary transition">Home</a>
-        <a href="#company" class="text-gray-600 hover:text-primary transition">Empresa</a>
-        <a href="#about" class="text-gray-600 hover:text-primary transition">Sócios</a>
-        <a href="#services" class="text-gray-600 hover:text-primary transition">Serviços</a>
-        <a href="#contact" class="text-gray-600 hover:text-primary transition">Contato</a>
+      <nav role="navigation" class="flex flex-col p-4 space-y-4">
+        <a href="#home" class="text-primary font-medium">Home</a>
+        <a href="#company" class="text-gray-600">Empresa</a>
+        <a href="#about" class="text-gray-600">Sócios</a>
+        <a href="#services" class="text-gray-600">Serviços</a>
+        <a href="#contact" class="text-gray-600">Contato</a>
         <a target="_blank" href="https://wa.me/5562992990455"
           class="bg-primary hover:bg-secondary text-white px-6 py-2 rounded-md font-medium transition text-center">
           Fale com a Giovana
@@ -196,7 +196,7 @@
           </p>
           <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
             <a target="_blank" href="https://wa.me/5562992990455"
-              class="bg-secondary hover:bg-primary text-white px-8 py-3 rounded-md font-medium text-lg transition text-center">
+              class="bg-secondary hover:bg-primary text-white font-bold px-8 py-3 rounded-md text-lg transition text-center">
               Agende uma conversa estratégica
             </a>
           </div>
@@ -366,7 +366,7 @@
             </a>
             <div class="flex items-start">
               <div class="bg-secondary text-white p-2 rounded-full mr-4">
-                <a target="_blank" href="https://www.linkedin.com/in/giovana-albuquerque"><i
+                <a aria-label="Icone linkedin" target="_blank" href="https://www.linkedin.com/in/giovana-albuquerque"><i
                     data-feather="linkedin"></i>
                 </a>
               </div>
@@ -380,7 +380,7 @@
             </div>
             <div class="flex items-start">
               <div class="bg-secondary text-white p-2 rounded-full mr-4">
-                <a target="_blank" href="https://www.linkedin.com/in/giovana-albuquerque"><i
+                <a aria-label="Icone instagram" target="_blank" href="https://www.linkedin.com/in/giovana-albuquerque"><i
                     data-feather="instagram"></i>
                 </a>
               </div>
@@ -404,28 +404,8 @@
     <div class="container mx-auto px-6 overflow-hidden">
       <div class="flex flex-col md:flex-row items-center">
         <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
-          <img src="img/imagem07.png" alt="Projeto gestão de obras em casa de condomínio"
+          <img src="img/imagem08.png" alt="Projeto gestão de obras em casa de condomínio"
             class="rounded-lg shadow-xl max-w-md w-full" />
-          <!-- <div class="mb-8">
-              <h3 class="text-xl font-bold mb-4">Ferramentas que utilizamos</h3>
-              <div class="flex flex-wrap gap-2">
-                <span class="bg-white bg-opacity-10 px-3 py-1 rounded-full"
-                  >MsProject</span
-                >
-                <span class="bg-white bg-opacity-10 px-3 py-1 rounded-full"
-                  >Prevision</span
-                >
-                <span class="bg-white bg-opacity-10 px-3 py-1 rounded-full"
-                  >SAP</span
-                >
-                <span class="bg-white bg-opacity-10 px-3 py-1 rounded-full"
-                  >Mega</span
-                >
-                <span class="bg-white bg-opacity-10 px-3 py-1 rounded-full"
-                  >BIM</span
-                >
-              </div>
-            </div> -->
         </div>
         <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
           <div class="bg-white bg-opacity-10 p-8 rounded-lg">
@@ -564,7 +544,7 @@
             <img src="img/work01.png" alt="Torre Residencial – Franca/SP" class="w-full h-full object-cover" />
           </div>
           <div class="p-6">
-            <p class="text-gray-600 mb-4">
+            <p class="text-sm text-gray-600 mb-4">
               *Torre Residencial – Franca/SP
             </p>
           </div>
@@ -579,7 +559,7 @@
           </div>
           <div class="p-6">
 
-            <p class="text-gray-600 mb-4">
+            <p class="text-sm text-gray-600 mb-4">
               *Torre Residencial – Ribeirão Preto/SP
             </p>
           </div>
@@ -592,7 +572,7 @@
             <img src="img/work03.png" alt="Torre Residencial – Franca/SP." class="w-full h-full object-cover" />
           </div>
           <div class="p-6">
-            <p class="text-gray-600 mb-4">
+            <p class="text-sm text-gray-600 mb-4">
               *Torre Residencial – Franca/SP.
             </p>
           </div>
@@ -605,7 +585,7 @@
             <img src="img/work04.jpeg" alt="Casa em Condomínio – São Carlos/SP." class="w-full h-full object-cover" />
           </div>
           <div class="p-6">
-            <p class="text-gray-600 mb-4">
+            <p class="text-sm text-gray-600 mb-4">
               *Casa em Condomínio – São Carlos/SP.
             </p>
           </div>
@@ -748,14 +728,14 @@
             <div class="mt-10">
               <h4 class="font-bold text-lg mb-4">Redes Sociais</h4>
               <div class="flex space-x-4">
-                <a target="_blank" href="https://www.linkedin.com/in/giovana-albuquerque"
+                <a aria-label="Icone linkedin" target="_blank" href="https://www.linkedin.com/in/giovana-albuquerque"
                   class="bg-primary text-white p-3 rounded-full hover:bg-secondary transition">
                   <i data-feather="linkedin"></i>
                 </a>
-                <a href="#" class="bg-primary text-white p-3 rounded-full hover:bg-secondary transition">
+                <a aria-label="Icone instagram" href="#" class="bg-primary text-white p-3 rounded-full hover:bg-secondary transition">
                   <i data-feather="instagram"></i>
                 </a>
-                <a href="#" class="bg-primary text-white p-3 rounded-full hover:bg-secondary transition">
+                <a aria-label="Icone facebook" href="#" class="bg-primary text-white p-3 rounded-full hover:bg-secondary transition">
                   <i data-feather="facebook"></i>
                 </a>
               </div>
